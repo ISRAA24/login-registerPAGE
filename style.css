@@ -1,0 +1,49 @@
+
+body {
+    font-family: "Sofia", sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-image: url('/closeup-shot-waving-flag-palestine.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+body h1{
+    color: gray;
+    font-size: 75px;
+    margin-bottom: 0;
+
+}
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    font-family: "Sofia", sans-serif;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 16px;
+    border-color: white;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+}
+#results p{
+    font-size: 35px;
+}

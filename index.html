@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Or Regiset Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    </head>
+
+<body>
+
+    
+    <div id="welcome" class="page active">
+        <h1  class="animate__animated animate__zoomInDown">Welcome to Our Website</h1>
+        
+        <button onclick="showPage('login-register-buttons')">Get Started</button>
+    </div>
+
+    
+    <div id="login-register-buttons" class="page hidden">
+        <h1>Login or Register</h1>
+        <button onclick="showForm('login')">Login</button>
+        <button onclick="showForm('register')">Register</button>
+    </div>
+
+
+    <div id="login-register" class="page hidden">
+        <h1 id="form-title">Login / Register</h1>
+        <form id="userForm" onsubmit="showResults(event)">
+            <div id="form-fields"></div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    
+    <div id="results" class="page hidden">
+        <h1>Thank You!</h1>
+        <p>Your login or registration was successful.</p>
+        <button onclick="showPage('welcome')">Back to Home page</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
